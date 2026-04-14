@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #fce4ec);
+  color: #444;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 70px;
+  color: #d46a8c;
+}
+
+.hero span {
+  font-family: "Playfair Display", serif;
+}
+
+.hero p {
+  font-size: 22px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  margin: 30px auto;
+  padding: 30px;
+  width: 85%;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.01);
+}
+
+.card.pink {
+  background: rgba(255, 209, 220, 0.7);
+}
+
+.card h2 {
+  font-family: "Playfair Display", serif;
+  color: #c85a7c;
+}
+
+/* PROFILE */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile {
+  border-radius: 50%;
+  border: 4px solid pink;
+}
+
+/* HOBBIES */
+.hobbies {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.hobbies div {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  color: #d46a8c;
+}
+
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SPARKLES */
+.sparkle,
+.sparkle2 {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: pink;
+  border-radius: 50%;
+  animation: float 6s infinite;
+}
+
+.sparkle {
+  top: 20%;
+  left: 10%;
+}
+.sparkle2 {
+  top: 60%;
+  right: 10%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
